@@ -11,6 +11,20 @@
 
 // Your code :
 
+function multiply(num1,num2){
+    let result = 0;
+      if(num1 === 0 && num2 === 0){
+          return 0
+      } if (num2> 0){
+        result = result + num1 
+        return multiply(num1,num2 - 1) + result 
+      }  if (num2< 0) {
+          result = result + num1
+          return - result + multiply(num1,num2 + 1)
+      } else {
+          return result
+      }
+}
 //* Begin of tests
 const assert = require('assert')
 

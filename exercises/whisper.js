@@ -6,10 +6,14 @@
  * and wrapped by `*`
  *
  */
+function whisper(a){
+    return a.toLowerCase()
 
+}
 
 //* Begin of tests
 const assert = require('assert')
+assert.deepStrictEqual(whisper("YASSINE"), "yassine")
 
-assert.fail('You must write your own tests')
+
 // End of tests */
